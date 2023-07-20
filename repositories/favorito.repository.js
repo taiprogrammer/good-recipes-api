@@ -48,6 +48,21 @@ async function getRecipeFavorites(id) {
   }
 }
 
+async function updateFavorite(favorite) {
+  const client = getClient();
+
+  try {
+    return await client
+      .db("favorite_db")
+      .collection("favorite")
+      .updateOne({ receitaId: favorite.receitaId }, { $set: { ...favorite } });
+  } catch (error) {
+    throw error;
+  } finally {
+    await client.close();
+  }
+}
+
 async function deleteFavorite(id) {
   const client = getClient();
 
@@ -65,5 +80,6 @@ export default {
   createFavorite,
   getUserFavorites,
   getRecipeFavorites,
+  updateFavorite,
   deleteFavorite,
 };

@@ -1,14 +1,55 @@
 import FavoritoService from "../services/favorito.service.js";
 
+import { api } from "../config/axios.js";
+
 async function createFavorite(req, res, next) {
   try {
     const favorite = req.body;
+    const favorites = await api.get(`/favorite/${favorite.receitaId}/recipe`);
+
+    console.log("favorites", favorites.data);
 
     if (!favorite.usuarioId || !favorite.receitaId) {
       throw new Error("Parametros obrigatórios faltantes");
     }
 
-    res.status(201).send(await FavoritoService.createFavorite(favorite));
+    if (favorites.data.length > 0) {
+      favorites.data.map(async (item) => {
+        if (
+          item.receitaId === favorite.receitaId &&
+          item.usuarioId !== favorite.usuarioId
+        ) {
+          const payload = {
+            ...favorite,
+            quantidade: parseInt(item.quantidade) + 1,
+          };
+          res.status(201).send(await FavoritoService.updateFavorite(payload));
+        }
+        if (
+          item.receitaId === favorite.receitaId &&
+          item.usuarioId === favorite.usuarioId
+        ) {
+          res.status(400).send({ message: "Favorito já existente!" });
+          throw new Error("Favorito já existente!");
+        }
+        if (
+          item.receitaId !== favorite.receitaId &&
+          item.usuarioId !== favorite.usuarioId
+        ) {
+          const payload = {
+            ...favorite,
+            quantidade: 1,
+          };
+          res.status(201).send(await FavoritoService.createFavorite(payload));
+        }
+      });
+    } else {
+      const payload = {
+        ...favorite,
+        quantidade: 1,
+      };
+      res.status(201).send(await FavoritoService.createFavorite(payload));
+    }
   } catch (error) {
     next(error);
   }
