@@ -38,6 +38,17 @@ async function updateRecipe(id, recipe) {
   }
 }
 
+async function getRecentRecipes() {
+  try {
+    return await Receita.findAll({
+      order: [["receita_id", "DESC"]],
+      limit: 5,
+    });
+  } catch (error) {
+    throw error;
+  }
+}
+
 async function deleteRecipe(id) {
   try {
     return await Receita.destroy({
@@ -54,6 +65,7 @@ export default {
   createRecipe,
   getRecipes,
   getRecipe,
+  getRecentRecipes,
   updateRecipe,
   deleteRecipe,
 };

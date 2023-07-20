@@ -64,7 +64,9 @@ async function login(req, res, next) {
       );
       res.status(200).send({ auth: true, token });
     } else {
-      res.status(401).end();
+      res
+        .status(401)
+        .send({ status: 401, message: "Usuário e/ou senha incorretos!" });
     }
 
     if (response.length <= 0) {

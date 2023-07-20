@@ -14,6 +14,8 @@ router.post(
 
 router.get("/", ReceitaController.getRecipes);
 
+router.get("/recents", ReceitaController.getRecentRecipes);
+
 router.get("/:id", ReceitaController.getRecipe);
 
 export default router;

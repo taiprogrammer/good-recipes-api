@@ -42,6 +42,15 @@ async function getRecipe(req, res, next) {
   }
 }
 
+async function getRecentRecipes(req, res, next) {
+  try {
+    res.status(200).send(await ReceitaService.getRecentRecipes());
+    logger.info(`GET /recipe/recents`);
+  } catch (error) {
+    next(error);
+  }
+}
+
 async function updateRecipe(req, res, next) {
   try {
     const { id } = req.params;
@@ -82,6 +91,7 @@ export default {
   createRecipe,
   getRecipes,
   getRecipe,
+  getRecentRecipes,
   updateRecipe,
   deleteRecipe,
 };
