@@ -199,3 +199,12 @@
 2023-07-20T20:36:36.556Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
 2023-07-20T20:44:23.018Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
 2023-07-20T20:45:36.416Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-25T23:24:34.369Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-25T23:26:12.976Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-25T23:26:44.177Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-25T23:27:03.734Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-25T23:27:33.218Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-25T23:28:00.698Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-25T23:28:49.905Z [good-recipes-api.log] error POST  - Cannot read properties of undefined (reading 'dataValues')
+2023-08-25T23:29:05.786Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-25T23:29:29.338Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}

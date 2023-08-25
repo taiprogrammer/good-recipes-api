@@ -62,7 +62,7 @@ async function login(req, res, next) {
           expiresIn: 300,
         }
       );
-      res.status(200).send({ auth: true, token });
+      res.status(200).send({ auth: true, token, id: response[0].dataValues.usuario_id });
     } else {
       res
         .status(401)
