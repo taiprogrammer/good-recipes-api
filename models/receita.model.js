@@ -1,5 +1,6 @@
 import Sequelize from "sequelize";
 import sequelize from "../config/postgres.database.js";
+import Usuario from "./usuario.model.js";
 
 const Receita = sequelize.define(
   "receita",
@@ -49,5 +50,7 @@ const Receita = sequelize.define(
     name: { singular: "receita", plural: "receita" },
   }
 );
+
+Receita.belongsTo(Usuario, { foreignKey: "usuarioId" });
 
 export default Receita;

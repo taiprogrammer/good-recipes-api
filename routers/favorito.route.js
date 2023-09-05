@@ -8,7 +8,7 @@ router.post("/", verifyJWT, FavoritoController.createFavorite);
 
 router.get("/:id", verifyJWT, FavoritoController.getUserFavorites);
 
-router.get("/:id/recipe", FavoritoController.getRecipeFavorites);
+router.post("/most-favorites", FavoritoController.getMostFavorites);
 
 router.delete("/:id", verifyJWT, FavoritoController.deleteFavorite);
 

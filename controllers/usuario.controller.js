@@ -59,10 +59,10 @@ async function login(req, res, next) {
         { userId: response[0].usuario_id },
         process.env.SECRET_KEY,
         {
-          expiresIn: 300,
+          expiresIn: 1000,
         }
       );
-      res.status(200).send({ auth: true, token, id: response[0].dataValues.usuario_id });
+      res.status(200).send({ auth: true, token, id: response[0].dataValues.usuario_id, nome: response[0].dataValues.nome });
     } else {
       res
         .status(401)
@@ -84,7 +84,7 @@ async function updateUser(req, res, next) {
     const { id } = req.params;
     const user = req.body;
 
-    if (!user.nome || !user.email || !user.senha || !user.dataNascimento) {
+    if (!id) {
       throw new Error("Parametros obrigatórios faltantes");
     }
 
@@ -95,16 +95,16 @@ async function updateUser(req, res, next) {
   }
 }
 
-async function getRecipes(req, res, next) {
-  try {
-    const { id } = req.params;
+// async function getRecipes(req, res, next) {
+//   try {
+//     const { id } = req.params;
 
-    res.status(200).send(await UsuarioService.getRecipes(parseInt(id)));
-    logger.info(`GET /user/${id}/recipes`);
-  } catch (error) {
-    next(error);
-  }
-}
+//     res.status(200).send(await UsuarioService.getRecipes(parseInt(id)));
+//     logger.info(`GET /user/${id}/recipes`);
+//   } catch (error) {
+//     next(error);
+//   }
+// }
 
 async function deleteUser(req, res, next) {
   try {
@@ -123,6 +123,6 @@ export default {
   getUser,
   login,
   updateUser,
-  getRecipes,
+  // getRecipes,
   deleteUser,
 };

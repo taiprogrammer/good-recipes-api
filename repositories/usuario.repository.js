@@ -1,4 +1,3 @@
-import Receita from "../models/receita.model.js";
 import Usuario from "../models/usuario.model.js";
 
 import { Op } from "sequelize";
@@ -30,7 +29,7 @@ async function getUser(id) {
 async function login(email, senha) {
   try {
     return await Usuario.findAll({
-      attributes: ["email", "senha", "usuario_id"],
+      attributes: ["email", "senha", "usuario_id", "nome"],
       where: {
         [Op.and]: [{ email: email }, { senha: senha }],
       },
@@ -54,20 +53,6 @@ async function updateUser(id, user) {
   }
 }
 
-async function getRecipes(id) {
-  try {
-    return await Usuario.findByPk(id, {
-      include: [
-        {
-          model: Receita,
-        },
-      ],
-    });
-  } catch (error) {
-    throw error;
-  }
-}
-
 async function deleteUser(id) {
   try {
     return await Usuario.destroy({
@@ -86,6 +71,5 @@ export default {
   getUser,
   login,
   updateUser,
-  getRecipes,
   deleteUser,
 };

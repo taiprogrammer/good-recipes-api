@@ -8,12 +8,8 @@ async function getUserFavorites(id) {
   return await FavoritoRepository.getUserFavorites(id);
 }
 
-async function getRecipeFavorites(id) {
-  return await FavoritoRepository.getRecipeFavorites(id);
-}
-
-async function updateFavorite(favorite) {
-  return await FavoritoRepository.updateFavorite(favorite);
+async function getMostFavorites() {
+  return await FavoritoRepository.getMostFavorites();
 }
 
 async function deleteFavorite(id) {
@@ -23,7 +19,6 @@ async function deleteFavorite(id) {
 export default {
   createFavorite,
   getUserFavorites,
-  getRecipeFavorites,
-  updateFavorite,
+  getMostFavorites,
   deleteFavorite,
 };

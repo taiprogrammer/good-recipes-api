@@ -1,84 +1,64 @@
-import { ObjectId } from "mongodb";
-import { getClient } from "../config/mongo.database.js";
+import Endereco from "../models/endereco.model.js"
+
+import { Op } from "sequelize";
 
 async function createAddress(address) {
-  const client = getClient();
 
   try {
-    await client.connect();
-
-    return await client
-      .db("address_id")
-      .collection("address")
-      .insertOne(address);
+    return await Endereco.create(address);
   } catch (error) {
     throw error;
-  } finally {
-    await client.close();
   }
 }
 
 async function getAddressesByUserId(id) {
-  const client = getClient();
-
   try {
-    return await client
-      .db("address_id")
-      .collection("address")
-      .find({ usuarioId: id })
-      .toArray();
+    return await Endereco.findAll({
+      attributes: ["endereco_id", "logradouro", "numero", "cep", "cidade", "pais"],
+      where: {
+        [Op.and]: [{ usuario_id: id }]
+      }
+    })
   } catch (error) {
     throw error;
-  } finally {
-    await client.close();
   }
 }
 
 async function getAddress(id) {
-  const client = getClient();
-
   try {
-    return await client
-      .db("address_id")
-      .collection("address")
-      .findOne({ _id: new ObjectId(id) });
+    return await Endereco.findAll({
+      attributes: ["endereco_id", "logradouro", "numero", "cep", "cidade", "pais"],
+      where: {
+        [Op.and]: [{ endereco_id: id }]
+      }
+    })
   } catch (error) {
     throw error;
-  } finally {
-    await client.close();
   }
 }
 
 async function updateAddress(id, newAddress) {
-  const client = getClient();
   try {
-    await client.connect();
 
-    await client
-      .db("address_id")
-      .collection("address")
-      .updateOne({ _id: new ObjectId(id) }, { $set: { ...newAddress } });
-
-    return await getAddress(id);
+    return await Endereco.update(newAddress, {
+      where: {
+        enderecoId: id
+      }
+    })
   } catch (error) {
     throw error;
-  } finally {
-    await client.close();
   }
 }
 
 async function deleteAddress(id) {
-  const client = getClient();
-
   try {
-    return await client
-      .db("address_id")
-      .collection("address")
-      .deleteOne({ _id: new ObjectId(id) });
+    return await Endereco.destroy({
+      where: {
+        enderecoId: id
+      }
+    })
   } catch (error) {
     throw error;
-  } finally {
-    await client.close();
   }
 }
 

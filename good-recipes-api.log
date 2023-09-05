@@ -1,210 +1,304 @@
-2023-03-30T17:18:51.245Z [good-recipes-api.log] info POST /user - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12"}
-2023-03-30T17:20:51.342Z [good-recipes-api.log] info GET /user
-2023-03-30T17:22:29.452Z [good-recipes-api.log] info GET /user/2
-2023-03-30T17:22:33.696Z [good-recipes-api.log] info GET /user/1
-2023-03-30T17:24:03.150Z [good-recipes-api.log] info GET /user
-2023-03-30T17:24:32.835Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T17:24:44.606Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T17:26:11.445Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T17:43:55.321Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T17:44:20.320Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T17:53:00.611Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T17:55:32.832Z [good-recipes-api.log] info PUT /user/2 - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12","enderecoId":1}
-2023-03-30T17:56:39.008Z [good-recipes-api.log] error GET  - relation "enderecos" does not exist
-2023-03-30T17:57:27.288Z [good-recipes-api.log] info GET /user/2/addresses
-2023-03-30T19:55:06.963Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T19:56:54.139Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T19:59:28.364Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T20:05:14.280Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T20:07:29.646Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T20:08:50.643Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T20:17:06.295Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T20:27:23.839Z [good-recipes-api.log] error GET  - column "nan" does not exist
-2023-03-30T20:30:34.513Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-03-30T20:30:48.838Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"90"}
-2023-03-30T20:33:43.875Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-03-30T20:35:32.934Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-03-30T20:35:52.291Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-03-30T20:35:57.779Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"0"}
-2023-03-30T20:37:36.575Z [good-recipes-api.log] error GET  - receita is not associated to usuario!
-2023-03-30T20:45:03.478Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T20:47:05.566Z [good-recipes-api.log] info POST - /recipe - {"nome":"Batata Gratinada","tempo":"1h:30m","porcoes":10,"ingredientes":"Batata, Molho Branco, Sal","modoPreparo":"Faz do seu jeito","usuarioId":2}
-2023-03-30T20:50:00.883Z [good-recipes-api.log] info GET /recipe
-2023-03-30T20:50:26.103Z [good-recipes-api.log] error GET  - receita is not associated to usuario!
-2023-03-30T20:53:14.523Z [good-recipes-api.log] info POST - /recipe - {"nome":"Batata Gratinada","tempo":"1h:30m","porcoes":10,"ingredientes":"Batata, Molho Branco, Sal","modoPreparo":"Faz do seu jeito","usuarioId":2}
-2023-03-30T20:53:18.375Z [good-recipes-api.log] info GET /recipe
-2023-03-30T20:53:26.873Z [good-recipes-api.log] error GET  - receita is not associated to usuario!
-2023-03-30T20:53:32.456Z [good-recipes-api.log] error GET  - receita is not associated to usuario!
-2023-03-30T21:41:56.940Z [good-recipes-api.log] info GET /user
-2023-03-30T21:43:21.737Z [good-recipes-api.log] info POST /user - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12"}
-2023-03-30T21:43:35.116Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T21:44:53.861Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T21:46:02.302Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T21:47:42.458Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T21:48:01.958Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T21:48:43.326Z [good-recipes-api.log] error POST  - column "hora" of relation "receita" does not exist
-2023-03-30T21:52:42.627Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T21:53:33.006Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T21:53:49.640Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T21:54:04.820Z [good-recipes-api.log] info POST - /recipe - {"nome":"Batata Gratinada","horas":1,"minutos":30,"segundos":0,"porcoes":10,"ingredientes":"Batata, Molho Branco, Sal","modoPreparo":"Faz do seu jeito"}
-2023-03-30T21:54:44.336Z [good-recipes-api.log] error PUT  - Parametros obrigatórios faltantes
-2023-03-30T21:55:15.681Z [good-recipes-api.log] info PUT /user/2 - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12","receitaId":2}
-2023-03-30T21:57:18.815Z [good-recipes-api.log] info PUT /user/2 - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12","receitaId":2}
-2023-03-30T21:59:15.167Z [good-recipes-api.log] info GET /user/1/recipes
-2023-03-30T21:59:22.368Z [good-recipes-api.log] info PUT /user/1 - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12","receitaId":2}
-2023-03-30T21:59:29.619Z [good-recipes-api.log] info GET /user/1/recipes
-2023-03-30T22:20:29.480Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-30T22:20:54.066Z [good-recipes-api.log] info GET /user
-2023-03-30T22:22:32.172Z [good-recipes-api.log] info POST /address - {"usuarioId":1,"logradouro":"Rua x","numero":"5B","cep":"05678490","cidade":"Cidade x","pais":"Pais x","_id":"64260ba72f2df9a025d52e23"}
-2023-03-30T22:23:34.368Z [good-recipes-api.log] info POST /address - {"usuarioId":1,"logradouro":"Rua x","numero":"5B","cep":"05678490","cidade":"Cidade x","pais":"Pais x","_id":"64260be636161dc8598acce2"}
-2023-03-30T23:08:59.460Z [good-recipes-api.log] error GET  - client.db(...).collection(...).findAll is not a function
-2023-03-30T23:57:13.502Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-31T00:08:00.352Z [good-recipes-api.log] error PUT  - Parametros obrigatórios faltantes
-2023-03-31T00:08:09.790Z [good-recipes-api.log] error PUT  - EnderecoService.updateAddress is not a function
-2023-03-31T00:48:38.067Z [good-recipes-api.log] error POST  - logradoudo is not defined
-2023-03-31T00:54:42.912Z [good-recipes-api.log] error POST  - Class constructor ObjectId cannot be invoked without 'new'
-2023-03-31T00:56:13.582Z [good-recipes-api.log] error PUT  - logradouro is not defined
-2023-03-31T01:03:35.073Z [good-recipes-api.log] info POST /address - {"usuarioId":1,"logradouro":"Rua teste","numero":"5B","cep":"05678490","cidade":"Cidade teste","pais":"Pais teste","_id":"64263166c664879d90ad09f5"}
-2023-03-31T01:04:33.355Z [good-recipes-api.log] error GET  - querySrv ETIMEOUT _mongodb._tcp.cluster0.l0ggbf7.mongodb.net
-2023-03-31T01:26:54.897Z [good-recipes-api.log] info GET /recipe
-2023-03-31T01:30:06.493Z [good-recipes-api.log] info GET /recipe
-2023-03-31T01:30:47.137Z [good-recipes-api.log] error GET  - no pg_hba.conf entry for host "191.23.48.189", user "waxmasba", database "taizamarques", SSL off
-2023-03-31T01:31:42.488Z [good-recipes-api.log] error GET  - password authentication failed for user "taizamarques"
-2023-03-31T01:32:02.199Z [good-recipes-api.log] error GET  - password authentication failed for user "taizamarques"
-2023-03-31T01:32:42.692Z [good-recipes-api.log] info GET /recipe
-2023-03-31T01:51:47.183Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-31T01:53:01.365Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-31T01:53:28.238Z [good-recipes-api.log] error POST  - Parametros obrigatórios faltantes
-2023-03-31T02:13:39.405Z [good-recipes-api.log] error POST  - Maximum call stack size exceeded
-2023-03-31T02:15:01.859Z [good-recipes-api.log] error POST  - Maximum call stack size exceeded
-2023-03-31T02:22:31.438Z [good-recipes-api.log] error DELETE  - Cannot set headers after they are sent to the client
-2023-04-02T02:52:16.068Z [good-recipes-api.log] info GET /user
-2023-04-02T02:52:31.927Z [good-recipes-api.log] info GET /user/1
-2023-04-02T02:53:05.987Z [good-recipes-api.log] info GET /user/1/recipes
-2023-06-06T14:33:15.310Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"0"}
-2023-06-06T18:44:12.629Z [good-recipes-api.log] info GET /recipe/1
-2023-07-19T13:31:14.139Z [good-recipes-api.log] info POST /user - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12"}
-2023-07-19T13:34:36.396Z [good-recipes-api.log] error POST  - Unexpected field
-2023-07-19T13:39:12.914Z [good-recipes-api.log] error POST  - Unexpected field
-2023-07-19T13:39:57.065Z [good-recipes-api.log] error POST  - Unexpected field
-2023-07-19T13:42:43.473Z [good-recipes-api.log] error POST  - Unexpected field
-2023-07-19T13:43:45.301Z [good-recipes-api.log] error POST  - Unexpected field
-2023-07-19T13:45:32.201Z [good-recipes-api.log] error POST  - Unexpected field
-2023-07-19T13:46:05.854Z [good-recipes-api.log] error POST  - Unexpected field
-2023-07-19T13:46:37.697Z [good-recipes-api.log] error POST  - Unexpected field
-2023-07-19T13:46:54.241Z [good-recipes-api.log] error POST  - ENOENT: no such file or directory, open 'uploads/1689774414236.jpg'
-2023-07-19T13:47:23.690Z [good-recipes-api.log] info POST - /recipe - {"nome":"Batata Gratinada","horas":"1","minutos":"30","segundos":"0","porcoes":"10","ingredientes":"Batata, Molho Branco, Sal","modoPreparo":"Teste","file":"uploads/1689774441248.jpg"}
-2023-07-19T13:49:31.696Z [good-recipes-api.log] info POST - /recipe - {"nome":"Batata Gratinada","horas":"1","minutos":"30","segundos":"0","porcoes":"10","ingredientes":"Batata, Molho Branco, Sal","modoPreparo":"Teste","imagem":"uploads/1689774568968.jpg"}
-2023-07-19T13:54:37.349Z [good-recipes-api.log] info GET /recipe
-2023-07-19T15:38:42.492Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"0"}
-2023-07-19T15:38:56.329Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-19T15:41:54.913Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-19T15:47:52.504Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-19T15:53:23.727Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohnK"}
-2023-07-19T15:53:28.686Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-19T16:06:48.418Z [good-recipes-api.log] error GET  - jwt is not defined
-2023-07-19T16:07:20.212Z [good-recipes-api.log] error GET  - jwt is not defined
-2023-07-19T16:08:31.149Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-19T16:17:54.331Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-19T16:18:19.416Z [good-recipes-api.log] info POST /address - {"usuarioId":1,"logradouro":"Rua teste","numero":"5B","cep":"05678490","cidade":"Cidade teste","pais":"Pais teste","_id":"64b80ccb3fa69f2a6d1037b2"}
-2023-07-19T16:44:48.908Z [good-recipes-api.log] info GET /recipe
-2023-07-19T20:20:07.272Z [good-recipes-api.log] info GET /recipe
-2023-07-19T20:20:15.895Z [good-recipes-api.log] info GET /recipe
-2023-07-19T20:21:52.654Z [good-recipes-api.log] info GET /recipe
-2023-07-19T20:21:56.640Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:41:35.828Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:41:36.135Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:42:02.962Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:44:32.570Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:44:34.616Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:45:48.862Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:47:29.721Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:49:51.757Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:50:12.409Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:50:14.445Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:50:35.477Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:50:35.784Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:52:13.179Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:52:13.637Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:52:28.272Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:55:21.566Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:55:46.077Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:55:48.273Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:57:04.329Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:57:04.874Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:58:54.829Z [good-recipes-api.log] info GET /recipe
-2023-07-20T02:58:54.892Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:00:10.331Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:00:43.522Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:00:46.055Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:02:05.838Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:02:50.785Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:03:31.133Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:05:12.321Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:05:24.910Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:11:28.375Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:11:43.097Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:12:56.519Z [good-recipes-api.log] info GET /recipe
-2023-07-20T03:15:53.322Z [good-recipes-api.log] info GET /recipe
-2023-07-20T13:30:00.600Z [good-recipes-api.log] info GET /recipe
-2023-07-20T13:31:04.740Z [good-recipes-api.log] info GET /recipe
-2023-07-20T13:32:18.873Z [good-recipes-api.log] info GET /recipe
-2023-07-20T13:53:02.686Z [good-recipes-api.log] info GET /recipe
-2023-07-20T13:53:16.823Z [good-recipes-api.log] info GET /recipe
-2023-07-20T14:15:35.663Z [good-recipes-api.log] info GET /user/login - {"email":"taiza","senha":"123"}
-2023-07-20T14:33:56.071Z [good-recipes-api.log] info GET /user/login - {"email":"taiza","senha":"123"}
-2023-07-20T14:34:23.152Z [good-recipes-api.log] info GET /user/login - {"email":"taiza","senha":"123"}
-2023-07-20T14:35:26.526Z [good-recipes-api.log] info GET /user/login - {"email":"taiza","senha":"123"}
-2023-07-20T14:36:13.498Z [good-recipes-api.log] info GET /user/login - {"email":"taiza","senha":"123"}
-2023-07-20T14:36:49.080Z [good-recipes-api.log] info GET /user/login - {"email":"taiza","senha":"123"}
-2023-07-20T14:38:12.715Z [good-recipes-api.log] info GET /user/login - {"email":"taiza","senha":"123"}
-2023-07-20T14:40:38.324Z [good-recipes-api.log] info GET /user/login - {"email":"t","senha":"k"}
-2023-07-20T14:56:26.401Z [good-recipes-api.log] info GET /user/login - {"email":"t","senha":"k"}
-2023-07-20T14:57:43.771Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@outlook.com","senha":"1"}
-2023-07-20T15:00:13.486Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@outlook.com","senha":"k"}
-2023-07-20T15:00:54.062Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@outlook.com","senha":"q"}
-2023-07-20T15:01:43.827Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@outlook.com","senha":"k"}
-2023-07-20T16:32:08.954Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T16:33:08.944Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T16:34:58.881Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T16:36:00.253Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T16:38:31.188Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T16:38:31.756Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:41:08.992Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:42:45.919Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:43:37.901Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:43:49.754Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T16:43:50.405Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:52:19.825Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:52:33.653Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:55:31.428Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T16:55:33.556Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:55:46.115Z [good-recipes-api.log] info GET /recipe
-2023-07-20T16:56:33.655Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjoh0"}
-2023-07-20T16:56:40.959Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T16:56:42.731Z [good-recipes-api.log] info GET /recipe
-2023-07-20T17:30:06.202Z [good-recipes-api.log] info GET /recipe/recents
-2023-07-20T17:31:49.933Z [good-recipes-api.log] info GET /recipe/recents
-2023-07-20T17:38:39.718Z [good-recipes-api.log] info GET /recipe/recents
-2023-07-20T17:38:45.894Z [good-recipes-api.log] info GET /recipe/recents
-2023-07-20T19:45:33.716Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T19:52:47.088Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T19:59:27.076Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:00:32.211Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:09:34.722Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:12:39.872Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:15:29.138Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:31:35.304Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:34:03.553Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:36:36.556Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:44:23.018Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-07-20T20:45:36.416Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-08-25T23:24:34.369Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-08-25T23:26:12.976Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-08-25T23:26:44.177Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-08-25T23:27:03.734Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-08-25T23:27:33.218Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-08-25T23:28:00.698Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-08-25T23:28:49.905Z [good-recipes-api.log] error POST  - Cannot read properties of undefined (reading 'dataValues')
-2023-08-25T23:29:05.786Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
-2023-08-25T23:29:29.338Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T17:24:35.232Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T17:25:05.806Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T17:26:23.811Z [good-recipes-api.log] error GET  - Client network socket disconnected before secure TLS connection was established
+2023-08-29T17:26:35.757Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T17:27:25.992Z [good-recipes-api.log] info GET /user/1/recipes
+2023-08-29T17:32:17.518Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T17:32:17.701Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T17:32:35.447Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-08-29T17:32:40.723Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T17:34:39.941Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T18:19:01.409Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:19:22.859Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T18:19:28.161Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:24:46.612Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:24:53.897Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T18:24:59.163Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:33:06.141Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:33:21.143Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T18:33:26.422Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:34:48.216Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-08-29T18:41:43.747Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:41:53.078Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T18:41:58.325Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:42:37.132Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:42:51.939Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-08-29T18:42:57.215Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:45:43.399Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:45:52.925Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T18:45:58.222Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:54:33.478Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T18:54:41.635Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-08-29T18:54:46.924Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T19:16:04.949Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T19:16:31.561Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T19:18:24.676Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T19:18:28.631Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T19:18:36.848Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-08-29T19:18:42.097Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T19:18:43.704Z [good-recipes-api.log] info GET /user/5
+2023-08-29T19:40:29.782Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T19:40:39.324Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-08-29T19:40:44.578Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T19:40:46.320Z [good-recipes-api.log] info GET /user/5
+2023-08-29T19:41:18.541Z [good-recipes-api.log] info GET /user/5
+2023-08-29T19:41:35.578Z [good-recipes-api.log] info GET /user/5
+2023-08-29T20:00:18.176Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T20:00:25.600Z [good-recipes-api.log] info GET /recipe/1
+2023-08-29T20:00:25.812Z [good-recipes-api.log] info GET /recipe/1
+2023-08-29T20:03:47.181Z [good-recipes-api.log] info GET /recipe/1
+2023-08-29T20:03:47.400Z [good-recipes-api.log] info GET /recipe/1
+2023-08-29T20:06:47.386Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T20:06:58.400Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-29T20:07:03.665Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T20:07:05.378Z [good-recipes-api.log] info GET /user/1
+2023-08-29T20:07:30.969Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T20:07:38.837Z [good-recipes-api.log] info GET /recipe/2
+2023-08-29T20:07:39.049Z [good-recipes-api.log] info GET /recipe/2
+2023-08-29T20:07:43.797Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T20:07:49.736Z [good-recipes-api.log] info GET /user/1
+2023-08-29T20:08:24.589Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T20:14:37.232Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T20:23:38.566Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T20:34:02.340Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T22:23:00.242Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T22:23:05.882Z [good-recipes-api.log] info GET /recipe/2
+2023-08-29T22:23:06.218Z [good-recipes-api.log] info GET /recipe/2
+2023-08-29T22:35:30.959Z [good-recipes-api.log] info GET /recipe/2
+2023-08-29T22:35:31.177Z [good-recipes-api.log] info GET /recipe/2
+2023-08-29T22:48:10.902Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T22:57:12.799Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-08-29T22:57:18.052Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T22:57:21.079Z [good-recipes-api.log] info GET /user/5
+2023-08-29T23:33:55.864Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T23:33:56.081Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T23:34:09.962Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-08-29T23:34:15.257Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-29T23:34:23.742Z [good-recipes-api.log] info GET /user/5
+2023-08-29T23:35:01.913Z [good-recipes-api.log] info GET /user/5
+2023-08-29T23:36:24.777Z [good-recipes-api.log] info GET /user/5
+2023-08-29T23:36:51.955Z [good-recipes-api.log] info PUT /user/5 - {"senha":"123123"}
+2023-08-29T23:37:12.285Z [good-recipes-api.log] info PUT /user/5 - {"senha":"1234"}
+2023-08-29T23:37:25.315Z [good-recipes-api.log] info PUT /user/5 - {"senha":"123123"}
+2023-08-29T23:38:33.696Z [good-recipes-api.log] info PUT /user/5 - {"senha":"123123"}
+2023-08-30T20:07:40.152Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:07:47.431Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:14:48.063Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:14:56.623Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypasskohn"}
+2023-08-30T20:15:04.202Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-08-30T20:15:09.488Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:15:13.322Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:15:36.906Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:16:15.238Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:16:30.937Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:21:47.738Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:22:35.304Z [good-recipes-api.log] error PUT  - string violation: nome cannot be an array or an object,
+string violation: email cannot be an array or an object
+2023-08-30T20:23:25.165Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:23:29.179Z [good-recipes-api.log] info PUT /user/1 - {"nome":"John Doe","email":"john.doe@sample.com","dataNascimento":"2000-08-12"}
+2023-08-30T20:23:37.785Z [good-recipes-api.log] info PUT /user/1 - {"nome":"John Magnum","email":"john.doe@sample.com","dataNascimento":"2000-08-12"}
+2023-08-30T20:23:42.585Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:25:19.517Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:25:38.309Z [good-recipes-api.log] info PUT /user/1 - {"nome":"John Magnum","email":"john.magnum@sample.com","dataNascimento":"2000-08-01"}
+2023-08-30T20:25:43.911Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:27:37.630Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:27:39.687Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:36:34.158Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:36:34.980Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:36:50.166Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-08-30T20:36:55.476Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:36:58.578Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:37:46.745Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:37:55.615Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:42:42.449Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:47:35.446Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:49:06.654Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:49:51.813Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:50:37.101Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:51:50.085Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:53:16.229Z [good-recipes-api.log] info GET /user/1
+2023-08-30T20:55:54.131Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:56:39.702Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-08-30T20:56:44.973Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T20:56:47.414Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:04:40.775Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:08:47.888Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:10:00.019Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:10:38.683Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:11:12.094Z [good-recipes-api.log] error PUT  - Parametros obrigatórios faltantes
+2023-08-30T21:12:12.786Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:12:48.889Z [good-recipes-api.log] error PUT  - Parametros obrigatórios faltantes
+2023-08-30T21:16:00.174Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T21:16:01.000Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T21:16:15.883Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-08-30T21:16:21.212Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T21:16:23.151Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:17:26.205Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:18:42.514Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:28:55.842Z [good-recipes-api.log] info PUT /user/1 - {"senha":""}
+2023-08-30T21:30:31.859Z [good-recipes-api.log] info GET /user/1
+2023-08-30T21:30:46.075Z [good-recipes-api.log] info PUT /user/1 - {"senha":"mypassjohn"}
+2023-08-30T21:31:42.909Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T21:56:52.375Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-30T23:16:05.610Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-31T00:03:59.048Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnus@sample.com","senha":"mypassjohn"}
+2023-08-31T00:04:06.181Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-08-31T00:04:11.497Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-31T00:04:15.533Z [good-recipes-api.log] info GET /user/1
+2023-08-31T00:17:34.092Z [good-recipes-api.log] info GET /user/1
+2023-08-31T00:32:21.659Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-31T00:32:34.358Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-08-31T00:32:39.769Z [good-recipes-api.log] info GET /recipe/recents
+2023-08-31T00:33:16.958Z [good-recipes-api.log] info GET /user/1
+2023-08-31T00:41:02.261Z [good-recipes-api.log] info GET /user/1
+2023-08-31T00:46:06.945Z [good-recipes-api.log] info GET /user/1
+2023-09-04T20:54:40.046Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T20:58:25.009Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T20:58:38.535Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-09-04T20:58:43.808Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T20:58:45.467Z [good-recipes-api.log] info GET /user/1
+2023-09-04T21:01:40.079Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T21:02:36.297Z [good-recipes-api.log] info POST /user - {"nome":"Marie Doe","email":"marie.doe@sample.com","senha":"marie123","dataNascimento":"2000-08-12"}
+2023-09-04T21:03:57.094Z [good-recipes-api.log] info GET /user/login - {"email":"marie.dos@sample.com","senha":"marie123"}
+2023-09-04T21:04:05.886Z [good-recipes-api.log] info GET /user/login - {"email":"marie.doe@sample.com","senha":"marie123"}
+2023-09-04T21:04:11.158Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T21:05:40.783Z [good-recipes-api.log] info GET /recipe/2
+2023-09-04T21:05:41.089Z [good-recipes-api.log] info GET /recipe/2
+2023-09-04T21:06:19.610Z [good-recipes-api.log] info GET /user/6
+2023-09-04T21:09:08.138Z [good-recipes-api.log] info GET /user/6
+2023-09-04T21:10:32.209Z [good-recipes-api.log] info PUT /user/6 - {"senha":"marie12"}
+2023-09-04T21:13:21.744Z [good-recipes-api.log] info GET /user/6
+2023-09-04T23:03:21.683Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T23:09:27.889Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T23:09:39.611Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-09-04T23:09:44.888Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T23:09:48.041Z [good-recipes-api.log] info GET /user/1
+2023-09-04T23:14:06.743Z [good-recipes-api.log] info GET /user/1
+2023-09-04T23:14:10.121Z [good-recipes-api.log] info GET /user/1
+2023-09-04T23:32:30.813Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-09-04T23:32:36.091Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-04T23:32:38.426Z [good-recipes-api.log] info GET /user/1
+2023-09-04T23:34:09.522Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:14:44.584Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:15:48.401Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-09-05T01:15:53.700Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:15:56.794Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:22:10.046Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:22:36.248Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:23:21.438Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:23:22.287Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:24:00.622Z [good-recipes-api.log] error DELETE  - Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+2023-09-05T01:24:34.353Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:25:00.822Z [good-recipes-api.log] error DELETE  - Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+2023-09-05T01:25:27.014Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:25:27.666Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:25:54.139Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:25:55.265Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:28:53.752Z [good-recipes-api.log] info GET /user/1
+2023-09-05T01:46:23.525Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:47:10.162Z [good-recipes-api.log] info GET /recipe/1
+2023-09-05T01:47:10.407Z [good-recipes-api.log] info GET /recipe/1
+2023-09-05T01:47:14.033Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:48:08.744Z [good-recipes-api.log] info POST /user - {"nome":"Vinicius","email":"vini.moraes@sample.com","senha":"teste","dataNascimento":"2000-04-13"}
+2023-09-05T01:48:21.781Z [good-recipes-api.log] info GET /user/login - {"email":"vini.moraes@sample.com","senha":"test"}
+2023-09-05T01:48:25.051Z [good-recipes-api.log] info GET /user/login - {"email":"vini.moraes@sample.com","senha":"teste"}
+2023-09-05T01:48:30.358Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:48:33.645Z [good-recipes-api.log] info GET /user/7
+2023-09-05T01:50:12.213Z [good-recipes-api.log] info GET /user/7
+2023-09-05T01:50:18.743Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:50:59.029Z [good-recipes-api.log] info GET /user
+2023-09-05T01:51:24.397Z [good-recipes-api.log] info GET /user/login - {"email":"vini.moraes@sample.com","senha":"teste"}
+2023-09-05T01:51:29.654Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:51:57.379Z [good-recipes-api.log] error DELETE  - logger is not a function
+2023-09-05T01:52:12.414Z [good-recipes-api.log] info GET /user/7
+2023-09-05T01:52:13.191Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:52:14.367Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:54:38.858Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T01:54:45.732Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:55:46.566Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:56:34.733Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:56:44.109Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:56:53.282Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:57:01.727Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:57:07.383Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:57:17.752Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:57:34.224Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:57:42.041Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:57:48.751Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:57:52.513Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:57:57.124Z [good-recipes-api.log] info GET /recipe/2
+2023-09-05T01:58:52.933Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:00:03.211Z [good-recipes-api.log] info GET /recipe/1
+2023-09-05T02:00:08.166Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:00:40.829Z [good-recipes-api.log] info POST /user - {"nome":"Vinicius Moraes","email":"vini.moraes@sample.com","senha":"teste","dataNascimento":"2000-04-13"}
+2023-09-05T02:00:49.991Z [good-recipes-api.log] info GET /user/login - {"email":"vini.moraes@sample.com","senha":"test"}
+2023-09-05T02:00:53.501Z [good-recipes-api.log] info GET /user/login - {"email":"vini.moraes@sample.com","senha":"teste"}
+2023-09-05T02:00:58.759Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:01:01.294Z [good-recipes-api.log] info GET /user/8
+2023-09-05T02:02:37.809Z [good-recipes-api.log] info PUT /user/8 - {"senha":"teste"}
+2023-09-05T02:03:30.510Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:03:42.220Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:03:44.089Z [good-recipes-api.log] info GET /user/8
+2023-09-05T02:04:02.391Z [good-recipes-api.log] info GET /user/8
+2023-09-05T02:07:59.484Z [good-recipes-api.log] info GET /user/8
+2023-09-05T02:08:03.645Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:08:14.817Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:08:39.018Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-09-05T02:08:44.287Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:08:48.986Z [good-recipes-api.log] info GET /user/1
+2023-09-05T02:09:03.056Z [good-recipes-api.log] info GET /user/1
+2023-09-05T02:09:54.138Z [good-recipes-api.log] info GET /user/1
+2023-09-05T02:11:30.008Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T02:11:58.981Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T02:13:24.592Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T02:14:04.279Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T02:14:31.033Z [good-recipes-api.log] info GET /user/1
+2023-09-05T02:15:09.035Z [good-recipes-api.log] info GET /user/1
+2023-09-05T02:15:12.063Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:15:28.075Z [good-recipes-api.log] info GET /user/login - {"email":"john.magnum@sample.com","senha":"mypassjohn"}
+2023-09-05T02:15:33.352Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:16:34.454Z [good-recipes-api.log] info GET /user/1
+2023-09-05T02:16:39.957Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:17:06.275Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:17:15.685Z [good-recipes-api.log] info GET /recipe/1
+2023-09-05T02:21:43.681Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T02:21:48.972Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:21:51.084Z [good-recipes-api.log] info GET /user/5
+2023-09-05T02:22:15.377Z [good-recipes-api.log] info GET /user/1
+2023-09-05T02:22:41.987Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:23:11.587Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T02:23:16.903Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:24:48.924Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T02:24:56.605Z [good-recipes-api.log] info GET /user/5
+2023-09-05T15:10:05.469Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T15:10:42.834Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T16:03:27.127Z [good-recipes-api.log] info POST /user - {"nome":"Taiza Marques","email":"taizamarquesousa@gmail.com","senha":"123123","dataNascimento":"2000-08-12"}
+2023-09-05T16:03:36.859Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T16:03:42.153Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T16:04:03.694Z [good-recipes-api.log] error GET  - Op is not defined
+2023-09-05T16:04:36.055Z [good-recipes-api.log] error GET  - relation "favoritos" does not exist
+2023-09-05T16:15:51.288Z [good-recipes-api.log] error GET  - relation "favoritos" does not exist
+2023-09-05T16:23:33.131Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T16:23:39.438Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T16:23:44.722Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T16:23:54.045Z [good-recipes-api.log] error GET  - attributes is not defined
+2023-09-05T16:31:46.669Z [good-recipes-api.log] error GET  - column receita.id_receita does not exist
+2023-09-05T16:56:39.851Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T16:56:58.802Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T16:57:04.041Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T16:57:56.704Z [good-recipes-api.log] info GET /user/1
+2023-09-05T17:14:52.835Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T17:22:49.636Z [good-recipes-api.log] error GET  - favorito is not associated to receita!
+2023-09-05T17:29:29.952Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T17:29:35.777Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-05T17:29:41.019Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-05T17:29:56.222Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-05T17:30:49.768Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-05T17:32:02.623Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-05T17:33:59.811Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-05T17:44:21.365Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-05T17:45:32.051Z [good-recipes-api.log] error POST  - column favorito.DESC does not exist
+2023-09-05T17:46:20.294Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-05T17:48:32.256Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-05T17:49:36.386Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-05T17:50:02.953Z [good-recipes-api.log] info GET /recipe/recents

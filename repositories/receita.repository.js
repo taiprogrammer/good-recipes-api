@@ -1,4 +1,5 @@
 import Receita from "../models/receita.model.js";
+import Favoritos from "../models/favorito.model.js"
 
 async function createRecipe(recipe) {
   try {

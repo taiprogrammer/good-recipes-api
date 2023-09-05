@@ -1,76 +1,59 @@
-import { ObjectId } from "mongodb";
-import { getClient } from "../config/mongo.database.js";
+import Favorito from "../models/favorito.model.js";
+import Receita from "../models/receita.model.js";
+
+import { Op } from "sequelize";
 
 async function createFavorite(favorite) {
-  const client = getClient();
-
   try {
-    return await client
-      .db("favorite_db")
-      .collection("favorite")
-      .insertOne(favorite);
+    return await Favorito.create(favorite);
   } catch (error) {
     throw error;
-  } finally {
-    await client.close();
   }
 }
 
 async function getUserFavorites(id) {
-  const client = getClient();
-
   try {
-    return await client
-      .db("favorite_db")
-      .collection("favorite")
-      .find({ usuarioId: id })
-      .toArray();
+    return await Favorito.findAll({
+      attributes: ["quantidade"],
+      where: {
+        [Op.and]: [{ usuario_id: id }],
+      },
+      include: [{
+        model: Receita,
+        required: true,
+        attributes: ["nome", "imagem", "horas", "minutos", "segundos", "porcoes", "receita_id"]
+      }]
+    })
   } catch (error) {
     throw error;
-  } finally {
-    await client.close();
   }
 }
 
-async function getRecipeFavorites(id) {
-  const client = getClient();
-
+async function getMostFavorites() {
   try {
-    return await client
-      .db("favorite_db")
-      .collection("favorite")
-      .find({ receitaId: id })
-      .toArray();
+    return await Favorito.findAll({
+      attributes: ["quantidade"],
+      raw: true,
+      include: [{
+        model: Receita,
+        required: true,
+        attributes: ["nome", "imagem", "horas", "minutos", "segundos", "porcoes", "receita_id"]
+      }],
+      order: [["quantidade", "DESC"]],
+      limit: 5,
+    })
   } catch (error) {
     throw error;
-  } finally {
-    await client.close();
-  }
-}
-
-async function updateFavorite(favorite) {
-  const client = getClient();
-
-  try {
-    return await client
-      .db("favorite_db")
-      .collection("favorite")
-      .updateOne({ receitaId: favorite.receitaId }, { $set: { ...favorite } });
-  } catch (error) {
-    throw error;
-  } finally {
-    await client.close();
   }
 }
 
 async function deleteFavorite(id) {
-  const client = getClient();
-
   try {
-    return await client
-      .db("favorite_db")
-      .collection("favorite")
-      .deleteOne({ _id: new ObjectId(id) });
+    return await Favorito.destroy({
+      where: {
+        favoritoId: id,
+      },
+    })
   } catch (error) {
     throw error;
   }
@@ -79,7 +62,6 @@ async function deleteFavorite(id) {
 export default {
   createFavorite,
   getUserFavorites,
-  getRecipeFavorites,
-  updateFavorite,
+  getMostFavorites,
   deleteFavorite,
 };
