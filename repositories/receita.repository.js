@@ -1,5 +1,7 @@
 import Receita from "../models/receita.model.js";
-import Favoritos from "../models/favorito.model.js"
+import Favoritos from "../models/favorito.model.js";
+
+import { Op } from "sequelize";
 
 async function createRecipe(recipe) {
   try {
@@ -39,6 +41,27 @@ async function updateRecipe(id, recipe) {
   }
 }
 
+async function getUserRecipes(id) {
+  try {
+    return await Receita.findAll({
+      attributes: [
+        "receita_id",
+        "imagem",
+        "nome",
+        "horas",
+        "minutos",
+        "segundos",
+        "porcoes",
+      ],
+      where: {
+        [Op.and]: [{ usuario_id: id }],
+      },
+    });
+  } catch (error) {
+    throw error;
+  }
+}
+
 async function getRecentRecipes() {
   try {
     return await Receita.findAll({
@@ -67,6 +90,7 @@ export default {
   getRecipes,
   getRecipe,
   getRecentRecipes,
+  getUserRecipes,
   updateRecipe,
   deleteRecipe,
 };

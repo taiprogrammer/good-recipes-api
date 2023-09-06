@@ -16,6 +16,8 @@ router.get("/", ReceitaController.getRecipes);
 
 router.get("/recents", ReceitaController.getRecentRecipes);
 
+router.get("/:id/my-recipes", verifyJWT, ReceitaController.getUserRecipes);
+
 router.get("/:id", ReceitaController.getRecipe);
 
 export default router;
