@@ -368,3 +368,273 @@ string violation: email cannot be an array or an object
 2023-09-05T21:25:51.183Z [good-recipes-api.log] info GET /user/1
 2023-09-05T21:26:14.984Z [good-recipes-api.log] info POST /address - {"usuarioId":"1","logradouro":"Rua dos Golfinhos","numero":"90","cep":"29172084","cidade":"Serra","pais":"Brasil"}
 2023-09-05T21:30:14.730Z [good-recipes-api.log] info POST /address - {"usuarioId":"1","logradouro":"Rua Giacomo Sônego Neto","numero":"80","cep":"88804440","cidade":"Criciúma","pais":"Brasil"}
+2023-09-06T11:20:31.305Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:20:33.291Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:23:55.200Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:24:07.396Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-06T11:24:12.688Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:24:14.607Z [good-recipes-api.log] info GET /user/1
+2023-09-06T11:25:59.266Z [good-recipes-api.log] info POST /address - {"usuarioId":"1","logradouro":"Rua São João","numero":"78","cep":"29942786","cidade":"São Mateus","pais":"Brasil"}
+2023-09-06T11:25:59.268Z [good-recipes-api.log] info POST /address - {"usuarioId":"1","logradouro":"Rua São João","numero":"78","cep":"29942786","cidade":"São Mateus","pais":"Brasil"}
+2023-09-06T11:33:29.427Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:43:59.600Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:44:17.421Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-06T11:44:22.695Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:45:37.587Z [good-recipes-api.log] info GET /recipe/1
+2023-09-06T11:45:44.101Z [good-recipes-api.log] info GET /user/1
+2023-09-06T11:45:48.268Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:48:09.032Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:50:20.802Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T11:57:03.449Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T12:10:33.386Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T12:20:56.731Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T13:49:10.388Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T14:42:51.983Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T14:42:54.431Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T14:44:15.149Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T14:44:15.178Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T14:45:53.044Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T14:45:53.047Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:01:08.167Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:02:55.486Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:02:55.577Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:03:14.935Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:03:14.948Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:06:21.811Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:06:21.812Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:07:57.470Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:07:57.483Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:15:09.091Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:15:09.105Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:16:38.588Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:16:38.592Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:17:39.008Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:17:39.023Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:18:31.945Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:18:31.948Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:19:30.003Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:19:30.006Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:39:06.093Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:39:07.995Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:39:08.197Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:52:23.113Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:52:23.248Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T15:52:29.220Z [good-recipes-api.log] info GET /recipe/1
+2023-09-06T15:52:38.324Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T15:52:38.539Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T16:11:57.675Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T16:11:57.678Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T16:28:02.149Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T16:28:02.152Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T16:35:01.452Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T16:35:01.461Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T16:35:10.202Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-06T16:35:15.489Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T16:35:15.675Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:05:20.802Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:05:20.866Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:05:31.165Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-06T17:05:36.450Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:05:36.671Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:18:56.117Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:18:56.127Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:21:54.275Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:21:54.297Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:23:17.215Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:23:17.218Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:29:55.969Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:29:55.983Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:30:02.534Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:30:02.537Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:30:10.091Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-06T17:30:15.386Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:30:15.595Z [good-recipes-api.log] info GET /recipe/recents
+2023-09-06T17:30:22.116Z [good-recipes-api.log] error POST  - notNull Violation: favorito.quantidade cannot be null
+2023-09-06T17:37:46.149Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:37:46.155Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:38:19.584Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:38:19.659Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T17:38:25.569Z [good-recipes-api.log] error POST  - notNull Violation: favorito.quantidade cannot be null
+2023-09-06T17:40:06.036Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-06T17:40:22.954Z [good-recipes-api.log] error POST  - Unexpected token } in JSON at position 56
+2023-09-06T17:40:53.743Z [good-recipes-api.log] error POST  - notNull Violation: favorito.quantidade cannot be null
+2023-09-06T17:41:08.336Z [good-recipes-api.log] error POST  - notNull Violation: favorito.quantidade cannot be null
+2023-09-06T18:18:40.763Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T18:18:41.091Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:38:53.603Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:38:53.689Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:38:53.732Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:38:53.807Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:39:02.889Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-06T19:39:08.175Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:39:08.410Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:46:56.383Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:46:56.393Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:47:36.909Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:47:37.152Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:48:51.099Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:48:51.304Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:49:27.659Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:49:27.867Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:50:47.247Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:50:47.467Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:55:13.302Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:55:13.521Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:56:39.336Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:56:39.341Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:56:59.704Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:56:59.778Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:57:12.505Z [good-recipes-api.log] info GET /user/login - {"email":"taizamarquesousa@gmail.com","senha":"123123"}
+2023-09-06T19:57:17.805Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:57:18.014Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:58:54.417Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T19:58:54.421Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:19:51.621Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:19:51.625Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:19:58.979Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:19:58.980Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:20:16.092Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:20:16.096Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:20:28.071Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:20:28.073Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-06T20:29:20.980Z [good-recipes-api.log] error POST  - relation "favorito" does not exist
+2023-09-06T20:29:20.982Z [good-recipes-api.log] error POST  - relation "favorito" does not exist
+2023-09-07T20:47:53.161Z [good-recipes-api.log] error POST  - column "data_nascimento" of relation "usuario" does not exist
+2023-09-07T20:49:18.363Z [good-recipes-api.log] error POST  - column "dataNascimento" of relation "usuario" does not exist
+2023-09-07T20:53:16.358Z [good-recipes-api.log] info POST /user - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12"}
+2023-09-07T20:53:48.423Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-07T20:54:42.445Z [good-recipes-api.log] info POST - /recipe - {"nome":"Arroz Doce","horas":"1","minutos":"0","segundos":"0","porcoes":"20","ingredientes":"Arroz","modoPreparo":"Teste","usuario_id":"1","imagem":"uploads/1694120081316.jpg"}
+2023-09-07T20:54:54.318Z [good-recipes-api.log] info POST - /recipe - {"nome":"Arroz Doce","horas":"1","minutos":"0","segundos":"0","porcoes":"20","ingredientes":"Arroz","modoPreparo":"Teste","usuarioId":"1","imagem":"uploads/1694120093259.jpg"}
+2023-09-07T20:55:53.616Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-07T20:58:16.360Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-07T21:44:47.329Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-07T21:45:07.117Z [good-recipes-api.log] error POST  - column "id" of relation "receita_favorito" does not exist
+2023-09-07T21:46:07.603Z [good-recipes-api.log] error POST  - Cannot read properties of undefined (reading 'dataValues')
+2023-09-07T21:46:29.614Z [good-recipes-api.log] error POST  - column "id" of relation "receita_favorito" does not exist
+2023-09-07T21:57:25.768Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-07T21:57:43.347Z [good-recipes-api.log] info POST /address - {"usuarioId":1,"logradouro":"Rua teste","numero":"5B","cep":"05678490","cidade":"Cidade teste","pais":"Pais teste"}
+2023-09-07T21:58:18.170Z [good-recipes-api.log] error POST  - Cannot read properties of undefined (reading 'dataValues')
+2023-09-07T21:59:28.114Z [good-recipes-api.log] error POST  - Cannot read properties of undefined (reading 'dataValues')
+2023-09-07T22:00:12.453Z [good-recipes-api.log] error POST  - Cannot read properties of undefined (reading 'dataValues')
+2023-09-07T22:01:43.399Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-07T22:01:56.591Z [good-recipes-api.log] error POST  - Cannot read properties of undefined (reading 'dataValues')
+2023-09-07T22:02:35.532Z [good-recipes-api.log] error POST  - Cannot read properties of undefined (reading 'dataValues')
+2023-09-07T22:03:01.033Z [good-recipes-api.log] error POST  - column "id" of relation "receita_favorito" does not exist
+2023-09-07T22:03:48.349Z [good-recipes-api.log] error POST  - column "id" of relation "receita_favorito" does not exist
+2023-09-07T22:10:54.239Z [good-recipes-api.log] info POST /user - {"nome":"John Doe","email":"john.doe@sample.com","senha":"mypassjohn","dataNascimento":"2000-08-12"}
+2023-09-07T22:10:58.616Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-07T22:11:12.563Z [good-recipes-api.log] info POST - /recipe - {"nome":"Arroz Doce","horas":"1","minutos":"0","segundos":"0","porcoes":"20","ingredientes":"Arroz","modoPreparo":"Teste","usuarioId":"1","imagem":"uploads/1694124670879.jpg"}
+2023-09-07T22:26:17.080Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-07T22:47:26.574Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-07T22:49:22.575Z [good-recipes-api.log] error GET  - column "nan" does not exist
+2023-09-07T22:49:52.394Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T22:51:26.303Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T22:52:26.210Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T22:57:17.948Z [good-recipes-api.log] error POST  - column receita_favorito.quantidade does not exist
+2023-09-07T22:58:17.966Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:00:53.863Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-07T23:01:05.661Z [good-recipes-api.log] info POST - /recipe - {"nome":"Pudim","horas":"2","minutos":"25","segundos":"0","porcoes":"20","ingredientes":"Pudim","modoPreparo":"Teste","usuarioId":"1","imagem":"uploads/1694127664287.jpg"}
+2023-09-07T23:18:06.246Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:18:06.256Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:18:28.872Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:18:28.878Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:21:39.027Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:21:39.030Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:23:23.990Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:23:23.994Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:24:24.625Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:24:24.631Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:40:18.061Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:40:18.069Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:40:54.393Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:40:54.399Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:47:23.785Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:47:23.791Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:47:41.615Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-07T23:47:46.939Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:47:47.125Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:47:49.608Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:47:49.612Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:47:49.635Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:47:49.639Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:48:16.421Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:48:16.425Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:48:18.939Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:48:18.944Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:48:18.947Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:48:18.951Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:51:47.081Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:51:47.088Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-07T23:51:49.604Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:51:49.611Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:51:49.618Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-07T23:51:49.623Z [good-recipes-api.log] error GET  - receita is not associated to favorito!
+2023-09-08T00:03:10.994Z [good-recipes-api.log] info GET /user/1
+2023-09-08T00:03:11.204Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:03:11.403Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:03:12.773Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:03:12.775Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:03:26.078Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-08T00:03:31.350Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:03:31.540Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:03:33.874Z [good-recipes-api.log] error GET  - Op is not defined
+2023-09-08T00:03:33.879Z [good-recipes-api.log] error GET  - Op is not defined
+2023-09-08T00:03:34.055Z [good-recipes-api.log] error GET  - Op is not defined
+2023-09-08T00:03:34.060Z [good-recipes-api.log] error GET  - Op is not defined
+2023-09-08T00:04:28.489Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:04:28.499Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:04:31.016Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito!
+2023-09-08T00:04:31.021Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito!
+2023-09-08T00:04:31.029Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito!
+2023-09-08T00:04:31.034Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito!
+2023-09-08T00:08:50.020Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:08:50.030Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:08:52.548Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito_usuario!
+2023-09-08T00:08:52.553Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito_usuario!
+2023-09-08T00:08:52.561Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito_usuario!
+2023-09-08T00:08:52.566Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito_usuario!
+2023-09-08T00:10:33.110Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T00:10:33.119Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T02:31:05.464Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-08T02:31:05.474Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T02:02:53.403Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-09T02:16:52.349Z [good-recipes-api.log] error GET  - receita_favorito is not associated to favorito!
+2023-09-09T02:23:07.566Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-09T02:23:20.611Z [good-recipes-api.log] error GET  - FavoritoUsuario.query is not a function
+2023-09-09T02:47:29.296Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T02:47:29.378Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T02:47:34.641Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T02:47:34.664Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T02:47:56.083Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-09T02:48:01.374Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T02:48:01.752Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T02:59:54.920Z [good-recipes-api.log] info GET /user/1
+2023-09-09T03:19:08.490Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:19:08.499Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:19:16.845Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:19:16.848Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:19:40.901Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-09T03:19:46.157Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:19:46.367Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:20:00.777Z [good-recipes-api.log] error PUT  - WHERE parameter "favorito_id" has invalid "undefined" value
+2023-09-09T03:21:20.114Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:21:20.135Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:22:03.569Z [good-recipes-api.log] error PUT  - WHERE parameter "favorito_id" has invalid "undefined" value
+2023-09-09T03:25:45.107Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:25:45.117Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:37:40.397Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:37:40.404Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:37:48.786Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:37:48.790Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:38:15.005Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-09T03:38:20.337Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:38:20.561Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:38:27.404Z [good-recipes-api.log] error DELETE  - FavoritoUsuario.delete is not a function
+2023-09-09T03:39:07.408Z [good-recipes-api.log] error DELETE  - FavoritoUsuario.delete is not a function
+2023-09-09T03:39:21.534Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:39:21.541Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:41:11.762Z [good-recipes-api.log] error DELETE  - FavoritoUsuario.delete is not a function
+2023-09-09T03:42:18.200Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:42:18.260Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:42:26.240Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-09T03:42:26.265Z [good-recipes-api.log] error POST  - logger is not defined

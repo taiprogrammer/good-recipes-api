@@ -1,10 +1,24 @@
 import FavoritoService from "../services/favorito.service.js";
 
-import { api } from "../config/axios.js";
-
 async function createFavorite(req, res, next) {
   try {
-    // TODO
+    const { favoritoId, usuarioId } = req.body;
+    const favorito = {
+      usuarioId,
+      favoritoId,
+    };
+    res.status(200).send(await FavoritoService.createFavorite(favorito));
+  } catch (error) {
+    next(error);
+  }
+}
+
+async function updateFavorite(req, res, next) {
+  try {
+    const favorite = req.body;
+    const { id } = req.params;
+
+    res.status(200).send(await FavoritoService.updateFavorite(favorite, id));
   } catch (error) {
     next(error);
   }
@@ -23,7 +37,16 @@ async function getUserFavorites(req, res, next) {
 async function getMostFavorites(req, res, next) {
   try {
     res.status(200).send(await FavoritoService.getMostFavorites());
-    logger.info(`GET /favorite/most-favorites`)
+    logger.info(`GET /favorite/most-favorites`);
+  } catch (error) {
+    next(error);
+  }
+}
+
+async function getRecentRecipes(req, res, next) {
+  try {
+    res.status(200).send(await FavoritoService.getRecentRecipes());
+    logger.info(`GET /favorite/recents`);
   } catch (error) {
     next(error);
   }
@@ -41,7 +64,9 @@ async function deleteFavorite(req, res, next) {
 
 export default {
   createFavorite,
+  updateFavorite,
   getUserFavorites,
   getMostFavorites,
+  getRecentRecipes,
   deleteFavorite,
 };

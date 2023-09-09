@@ -1,4 +1,7 @@
 import ReceitaService from "../services/receita.service.js";
+import FavoritoService from "../services/favorito.service.js";
+import ReceitaFavoritoService from "../services/receitaFavorito.service.js";
+
 import { logger } from "../log/index.log.js";
 
 async function createRecipe(req, res, next) {
@@ -10,12 +13,19 @@ async function createRecipe(req, res, next) {
       imagem: file.path,
     };
 
-    console.log(req);
     if (!recipe.nome || !recipe.porcoes || !recipe.ingredientes) {
       throw new Error("Parametros obrigatórios faltantes");
     }
 
-    res.status(201).send(await ReceitaService.createRecipe(recipe));
+    const response_favorite = await FavoritoService.createFavorite({ quantidade: 0 });
+
+    const response_recipe = await ReceitaService.createRecipe(recipe)
+
+    console.log(response_favorite.favoritoId);
+
+    await ReceitaFavoritoService.createFavoriteRecipe({ receitaId: response_recipe.receitaId, favoritoId: response_favorite.favoritoId })
+
+    res.status(201).send(response_recipe);
     logger.info(`POST - /recipe - ${JSON.stringify(recipe)}`);
   } catch (error) {
     next(error);
@@ -37,15 +47,6 @@ async function getRecipe(req, res, next) {
 
     res.status(200).send(await ReceitaService.getRecipe(parseInt(id)));
     logger.info(`GET /recipe/${id}`);
-  } catch (error) {
-    next(error);
-  }
-}
-
-async function getRecentRecipes(req, res, next) {
-  try {
-    res.status(200).send(await ReceitaService.getRecentRecipes());
-    logger.info(`GET /recipe/recents`);
   } catch (error) {
     next(error);
   }
@@ -100,7 +101,6 @@ export default {
   createRecipe,
   getRecipes,
   getRecipe,
-  getRecentRecipes,
   getUserRecipes,
   updateRecipe,
   deleteRecipe,

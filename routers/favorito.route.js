@@ -6,7 +6,11 @@ const router = express.Router();
 
 router.post("/", verifyJWT, FavoritoController.createFavorite);
 
+router.put("/:id", verifyJWT, FavoritoController.updateFavorite);
+
 router.get("/:id", verifyJWT, FavoritoController.getUserFavorites);
+
+router.post("/recents", FavoritoController.getRecentRecipes);
 
 router.post("/most-favorites", FavoritoController.getMostFavorites);
 

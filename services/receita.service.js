@@ -12,10 +12,6 @@ async function getRecipe(id) {
   return await ReceitaRepository.getRecipe(id);
 }
 
-async function getRecentRecipes() {
-  return await ReceitaRepository.getRecentRecipes();
-}
-
 async function getUserRecipes(id) {
   return await ReceitaRepository.getUserRecipes(id);
 }
@@ -32,7 +28,6 @@ export default {
   createRecipe,
   getRecipes,
   getRecipe,
-  getRecentRecipes,
   getUserRecipes,
   updateRecipe,
   deleteRecipe,
