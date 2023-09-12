@@ -2,11 +2,12 @@ import FavoritoService from "../services/favorito.service.js";
 
 async function createFavorite(req, res, next) {
   try {
-    const { favoritoId, usuarioId } = req.body;
+    const { favoritoId, usuarioId, quantidade } = req.body;
     const favorito = {
       usuarioId,
       favoritoId,
     };
+    await FavoritoService.updateFavorite({ quantidade: quantidade }, favoritoId);
     res.status(200).send(await FavoritoService.createFavorite(favorito));
   } catch (error) {
     next(error);
