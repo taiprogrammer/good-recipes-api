@@ -1,12 +1,19 @@
 import Favorito from "../models/favorito.model.js";
 import FavoritoUsuario from "../models/favorito_usuario.model.js";
-import Receita from "../models/receita.model.js";
 
 import { Op } from "sequelize";
 
 async function createFavorite(favorite) {
   try {
-    await FavoritoUsuario.create(favorite);
+    return await FavoritoUsuario.create(favorite);
+  } catch (error) {
+    throw error;
+  }
+}
+
+async function createEmptyFavorite(favorite) {
+  try {
+    return await Favorito.create(favorite);
   } catch (error) {
     throw error;
   }
@@ -38,6 +45,7 @@ async function deleteFavorite(id) {
 
 export default {
   createFavorite,
+  createEmptyFavorite,
   updateFavorite,
   deleteFavorite,
 };

@@ -13,15 +13,14 @@ async function createRecipe(req, res, next) {
       imagem: file.path,
     };
 
-    if (!recipe.nome || !recipe.porcoes || !recipe.ingredientes) {
+    if (!recipe.nome || !recipe.porcoes 
+      || !recipe.ingredientes) {
       throw new Error("Parametros obrigatórios faltantes");
     }
 
-    const response_favorite = await FavoritoService.createFavorite({ quantidade: 0 });
+    const response_favorite = await FavoritoService.createEmptyFavorite({ quantidade: 0 });
 
-    const response_recipe = await ReceitaService.createRecipe(recipe)
-
-    console.log(response_favorite.favoritoId);
+    const response_recipe = await ReceitaService.createRecipe(recipe);
 
     await ReceitaFavoritoService.createFavoriteRecipe({ receitaId: response_recipe.receitaId, favoritoId: response_favorite.favoritoId })
 

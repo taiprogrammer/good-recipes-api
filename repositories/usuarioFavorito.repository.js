@@ -21,7 +21,8 @@ async function getUserFavorites(id) {
         r.imagem, 
         r.horas, 
         r.minutos, 
-        r.segundos, 
+        r.segundos,
+        fu.favorito_usuario_id,
         r.porcoes FROM favorito_usuario fu 
         INNER JOIN favorito f ON fu.favorito_id = f.favorito_id 
         INNER JOIN receita_favorito rf ON rf.favorito_id = f.favorito_id 

@@ -56,7 +56,13 @@ async function deleteFavorite(req, res, next) {
   try {
     const { id } = req.params;
 
-    res.sendStatus(200).send(await FavoritoService.deleteFavorite(id));
+    const { favoritoUsuarioId, quantidade } = req.body;
+
+    await FavoritoService.deleteUserFavorite(favoritoUsuarioId);
+
+    await res
+      .sendStatus(200)
+      .send(await FavoritoService.updateFavorite({ quantidade: quantidade }, id));
   } catch (error) {
     next(error);
   }
