@@ -27,7 +27,6 @@ const __dirname = path.dirname(__filename);
 app.use("/uploads", express.static(path.join(__dirname, "/", "uploads")));
 
 app.use((err, req, res, next) => {
-  console.log("unexpected filed", err.field);
   logger.error(`${req.method} ${req.baseUrl} - ${err.message}`);
   res.status(400).send({ error: err.message });
 });

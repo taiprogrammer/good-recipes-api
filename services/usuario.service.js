@@ -20,10 +20,6 @@ async function updateUser(id, user) {
   return await UsuarioRepository.updateUser(id, user);
 }
 
-// async function getRecipes(id) {
-//   return await UsuarioRepository.getRecipes(id);
-// }
-
 async function deleteUser(id) {
   return await UsuarioRepository.deleteUser(id);
 }
@@ -34,6 +30,5 @@ export default {
   getUser,
   login,
   updateUser,
-  // getRecipes,
   deleteUser,
 };

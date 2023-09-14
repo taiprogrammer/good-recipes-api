@@ -95,17 +95,6 @@ async function updateUser(req, res, next) {
   }
 }
 
-// async function getRecipes(req, res, next) {
-//   try {
-//     const { id } = req.params;
-
-//     res.status(200).send(await UsuarioService.getRecipes(parseInt(id)));
-//     logger.info(`GET /user/${id}/recipes`);
-//   } catch (error) {
-//     next(error);
-//   }
-// }
-
 async function deleteUser(req, res, next) {
   try {
     const { id } = req.params;
@@ -123,6 +112,5 @@ export default {
   getUser,
   login,
   updateUser,
-  // getRecipes,
   deleteUser,
 };

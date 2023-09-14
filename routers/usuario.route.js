@@ -14,8 +14,6 @@ router.post("/login", UsuarioController.login);
 
 router.put("/:id", verifyJWT, UsuarioController.updateUser);
 
-// router.get("/:id/recipes", UsuarioController.getRecipes);
-
 router.delete("/:id", verifyJWT, UsuarioController.deleteUser);
 
 export default router;
