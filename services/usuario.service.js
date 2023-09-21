@@ -1,34 +1,34 @@
-import UsuarioRepository from "../repositories/usuario.repository.js";
+import UsuarioRepository from '../repositories/usuario.repository.js';
 
 async function createUser(user) {
-  return await UsuarioRepository.createUser(user);
+	return await UsuarioRepository.createUser(user);
 }
 
 async function getUsers() {
-  return await UsuarioRepository.getUsers();
+	return await UsuarioRepository.getUsers();
 }
 
 async function getUser(id) {
-  return await UsuarioRepository.getUser(id);
+	return await UsuarioRepository.getUser(id);
 }
 
 async function login(email, senha) {
-  return await UsuarioRepository.login(email, senha);
+	return await UsuarioRepository.login(email, senha);
 }
 
 async function updateUser(id, user) {
-  return await UsuarioRepository.updateUser(id, user);
+	return await UsuarioRepository.updateUser(id, user);
 }
 
 async function deleteUser(id) {
-  return await UsuarioRepository.deleteUser(id);
+	return await UsuarioRepository.deleteUser(id);
 }
 
 export default {
-  createUser,
-  getUsers,
-  getUser,
-  login,
-  updateUser,
-  deleteUser,
+	createUser,
+	getUsers,
+	getUser,
+	login,
+	updateUser,
+	deleteUser,
 };

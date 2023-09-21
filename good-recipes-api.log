@@ -815,3 +815,102 @@ string violation: email cannot be an array or an object
 2023-09-13T00:24:34.898Z [good-recipes-api.log] info GET /user/1
 2023-09-13T01:18:07.832Z [good-recipes-api.log] error POST  - logger is not defined
 2023-09-13T01:18:07.918Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:29:02.076Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:29:02.139Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:29:36.081Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:29:36.083Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:29:56.327Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-18T18:29:56.558Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"mypassjohn"}
+2023-09-18T18:30:01.328Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123123"}
+2023-09-18T18:30:06.573Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:30:06.778Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:30:32.782Z [good-recipes-api.log] info GET /user/1
+2023-09-18T18:33:37.243Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:33:37.248Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:57:23.435Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T18:57:23.439Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T23:16:05.716Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T23:16:05.720Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T23:44:53.324Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-18T23:44:53.326Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T16:58:52.908Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T16:58:52.914Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T16:59:01.702Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123123"}
+2023-09-19T16:59:07.014Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T16:59:07.267Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T16:59:19.579Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T16:59:19.781Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:01:42.991Z [good-recipes-api.log] info POST - /recipe - {"nome":"Bolo de Chocolate","horas":"3","minutos":"25","porcoes":"10","segundos":"0","ingredientes":"<li>Farinha</li><li>Cacau</li><li>3 Ovos</li><li>Leite</li><li>Manteiga</li>","modoPreparo":"<li>Misture todos os ingredientes em uma batedeira</li><li>Prepare a forma com manteiga e farinha</li><li>Jogue a massa na forma</li><li>Deixe no forno</li>","usuarioId":"1","imagem":"uploads/1695142900933.jpg"}
+2023-09-19T17:05:22.441Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:05:22.445Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:05:43.869Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:05:43.887Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:13:19.964Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:13:19.967Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:15:36.049Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:15:36.051Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:16:12.042Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123123"}
+2023-09-19T17:16:17.370Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:16:17.570Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:24:51.576Z [good-recipes-api.log] error GET  - Receita.query is not a function
+2023-09-19T17:32:48.589Z [good-recipes-api.log] error PUT  - notNull Violation: favorito.quantidade cannot be null
+2023-09-19T17:33:08.523Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123123"}
+2023-09-19T17:33:13.820Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:33:14.035Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:34:39.386Z [good-recipes-api.log] error PUT  - notNull Violation: favorito.quantidade cannot be null
+2023-09-19T17:47:03.861Z [good-recipes-api.log] error POST  - invalid input syntax for type integer: "NaN"
+2023-09-19T17:50:40.953Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:50:40.966Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:50:50.301Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123123"}
+2023-09-19T17:50:55.787Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:50:56.005Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:51:04.134Z [good-recipes-api.log] info GET /recipe/1
+2023-09-19T17:56:52.132Z [good-recipes-api.log] info POST - /recipe - {"nome":"Cookie","horas":"1","minutos":"20","porcoes":"15","segundos":"0","ingredientes":"<li>Farinha</li><li>Açúcar</li><li>3 Ovos</li><li>Chocolate em gotas</li>","modoPreparo":"<li>misture a farinha, ovos e açúcar na batedeira</li><li>Deixe em uma consistência que dê para modelar</li><li>Modele em rodelas</li><li>Adicione as gotas de chocolate</li><li>Coloque no forno</li>","usuarioId":"1","imagem":"uploads/1695146210656.jpg"}
+2023-09-19T17:56:56.237Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:56:56.568Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T17:59:56.393Z [good-recipes-api.log] error PUT  - Cannot set headers after they are sent to the client
+2023-09-19T18:00:29.308Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:00:29.316Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:18:44.113Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123124"}
+2023-09-19T18:18:52.515Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123123"}
+2023-09-19T18:18:57.801Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:18:58.003Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:19:30.677Z [good-recipes-api.log] info GET /recipe/1
+2023-09-19T18:19:43.862Z [good-recipes-api.log] info GET /user/1
+2023-09-19T18:20:18.216Z [good-recipes-api.log] info POST /address - {"usuarioId":"1","logradouro":"Rua Alto da Alegria","numero":"57","cep":"04859360","cidade":"São Paulo","pais":"Brazil"}
+2023-09-19T18:21:14.074Z [good-recipes-api.log] info PUT /user/1 - {"senha":"123123"}
+2023-09-19T18:24:14.192Z [good-recipes-api.log] info POST - /recipe - {"nome":"Batatas Fritas","horas":"30","minutos":"0","porcoes":"1","segundos":"0","ingredientes":"<li>Batata congelada</li><li>Air fryer</li><li>Sal</li>","modoPreparo":"<li>Coloque as batatas dentro da air fryer</li><li>Espere uns 30 minutos em 200 graus</li><li>Adicione o sal</li><li>Sirva as batatas</li>","usuarioId":"1","imagem":"uploads/1695147852813.jpg"}
+2023-09-19T18:24:37.963Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:24:38.154Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:24:49.747Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:24:49.967Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:32:46.713Z [good-recipes-api.log] info GET /user/1
+2023-09-19T18:46:48.843Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T18:46:48.911Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T20:53:52.737Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T20:53:52.742Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T20:57:09.262Z [good-recipes-api.log] info GET /recipe/2
+2023-09-19T20:57:55.851Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T20:57:55.855Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T20:58:01.107Z [good-recipes-api.log] info GET /recipe/3
+2023-09-19T21:02:13.652Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-19T21:02:13.656Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-21T17:50:58.572Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-21T17:50:58.581Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-21T17:51:05.125Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123123"}
+2023-09-21T17:51:10.391Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-21T17:51:10.641Z [good-recipes-api.log] error POST  - logger is not defined
+2023-09-21T18:09:16.880Z [good-recipes-api.log] info GET /favorite/recents
+2023-09-21T18:09:16.888Z [good-recipes-api.log] info GET /favorite/most-favorites
+2023-09-21T18:09:24.130Z [good-recipes-api.log] info GET /user/login - {"email":"john.doe@sample.com","senha":"123123"}
+2023-09-21T18:09:29.399Z [good-recipes-api.log] info GET /favorite/recents
+2023-09-21T18:09:29.605Z [good-recipes-api.log] info GET /favorite/most-favorites
+2023-09-21T18:09:32.108Z [good-recipes-api.log] info GET /favorite/1
+2023-09-21T18:09:32.302Z [good-recipes-api.log] info GET /favorite/1
+2023-09-21T18:09:32.498Z [good-recipes-api.log] info GET /favorite/1
+2023-09-21T18:09:32.734Z [good-recipes-api.log] info GET /favorite/1
+2023-09-21T18:09:33.046Z [good-recipes-api.log] info GET /favorite/1
+2023-09-21T18:09:33.351Z [good-recipes-api.log] info GET /favorite/1
+2023-09-21T18:09:37.554Z [good-recipes-api.log] info GET /favorite/1
+2023-09-21T18:09:39.269Z [good-recipes-api.log] info GET /favorite/1
+2023-09-21T18:09:39.467Z [good-recipes-api.log] info GET /favorite/1
