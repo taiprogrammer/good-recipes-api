@@ -14,8 +14,15 @@ async function createUser(req, res, next) {
 			throw new Error('Parametros obrigatórios faltantes');
 		}
 
+		const isUserSignedUp = await UsuarioService.getUsers();
+		if (isUserSignedUp.length > 0) {
+			if (isUserSignedUp.some(item => item.dataValues.email === user.email)) {
+				throw new Error('Usuário já cadastrado no sistema!');
+			}
+		}
 		res.status(201).send(await UsuarioService.createUser(user));
 		logger.info(`POST /user - ${JSON.stringify(user)}`);
+
 	} catch (error) {
 		next(error);
 	}
