@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec node index.js",
-    "vercel-build": "npx sequelize-cli init deploy"
+    "vercel-build": "npx sequelize-cli init"
   },
   "keywords": [],
   "author": "",
