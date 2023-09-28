@@ -1,0 +1,9 @@
+2023-09-28T23:16:06.299Z [good-recipes-api.log] info GET /recipe?nome=Red Velvet Cake
+2023-09-28T23:16:15.393Z [good-recipes-api.log] info GET /recipe?nome=Red
+2023-09-28T23:32:08.009Z [good-recipes-api.log] error GET  - s.replace is not a function
+2023-09-28T23:32:25.815Z [good-recipes-api.log] error GET  - s.replace is not a function
+2023-09-28T23:34:48.245Z [good-recipes-api.log] info GET /recipe?nome=Red
+2023-09-28T23:34:55.910Z [good-recipes-api.log] info GET /recipe?nome=Red velvet
+2023-09-28T23:35:08.304Z [good-recipes-api.log] info GET /recipe?nome=Red
+2023-09-28T23:35:14.817Z [good-recipes-api.log] info GET /recipe?nome=Red Velvet
+2023-09-28T23:37:58.607Z [good-recipes-api.log] info GET /recipe?nome=Red velvet

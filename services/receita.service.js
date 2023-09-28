@@ -8,6 +8,10 @@ async function getRecipes() {
 	return await ReceitaRepository.getRecipes();
 }
 
+async function getFilteredRecipe(name) {
+	return await ReceitaRepository.getFilteredRecipe(name);
+}
+
 async function getRecipe(id) {
 	return await ReceitaRepository.getRecipe(id);
 }
@@ -27,6 +31,7 @@ async function deleteRecipe(id) {
 export default {
 	createRecipe,
 	getRecipes,
+	getFilteredRecipe,
 	getRecipe,
 	getUserRecipes,
 	updateRecipe,
