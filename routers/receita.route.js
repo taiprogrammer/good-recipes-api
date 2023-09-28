@@ -12,7 +12,7 @@ router.post(
 	ReceitaController.createRecipe
 );
 
-router.get('/', ReceitaController.getRecipes);
+router.get('/', ReceitaController.getFilteredRecipe);
 
 router.get('/:id/my-recipes', verifyJWT, ReceitaController.getUserRecipes);
 

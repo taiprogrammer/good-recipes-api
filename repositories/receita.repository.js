@@ -19,6 +19,20 @@ async function getRecipes() {
 	}
 }
 
+async function getFilteredRecipe(name) {
+	try {
+		return await Receita.findAll({
+			where: {
+				nome: {
+					[Op.iLike]: `${name}%`
+				}
+			},
+		});
+	} catch (error) {
+		throw error;
+	}
+}
+
 async function getRecipe(id) {
 	try {
 		return await Receita.findByPk(id);
@@ -61,15 +75,13 @@ async function getUserRecipes(id) {
 					where: {
 						[Op.and]: [{ usuario_id: id }],
 					},
-				}
-			]
+				},
+			],
 		});
 	} catch (error) {
 		throw error;
 	}
 }
-
-
 
 async function deleteRecipe(id) {
 	try {
@@ -86,6 +98,7 @@ async function deleteRecipe(id) {
 export default {
 	createRecipe,
 	getRecipes,
+	getFilteredRecipe,
 	getRecipe,
 	getUserRecipes,
 	updateRecipe,

@@ -40,6 +40,20 @@ async function getRecipes(req, res, next) {
 	}
 }
 
+async function getFilteredRecipe(req, res, next) {
+	try {
+		const query = req.query.nome;
+		if (!req.query.nome) {
+			throw new Error('Parâmetros obrigatórios faltantes!');
+		}
+
+		res.status(200).send(await ReceitaService.getFilteredRecipe(query));
+		logger.info(`GET /recipe?nome=${query}`);
+	} catch (error) {
+		next(error);
+	}
+}
+
 async function getRecipe(req, res, next) {
 	try {
 		const { id } = req.params;
@@ -100,6 +114,7 @@ async function deleteRecipe(req, res, next) {
 export default {
 	createRecipe,
 	getRecipes,
+	getFilteredRecipe,
 	getRecipe,
 	getUserRecipes,
 	updateRecipe,
