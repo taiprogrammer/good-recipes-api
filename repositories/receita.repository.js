@@ -24,7 +24,7 @@ async function getFilteredRecipe(name) {
 		return await Receita.findAll({
 			where: {
 				nome: {
-					[Op.iLike]: `${name}%`
+					[Op.iLike]: `%${name}%`
 				}
 			},
 		});
